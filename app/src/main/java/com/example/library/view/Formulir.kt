@@ -21,6 +21,7 @@ import androidx.compose.foundation.layout.width
 import androidx.compose.material3.HorizontalDivider
 import androidx.compose.material3.DividerDefaults.Thickness
 import androidx.compose.material3.RadioButton
+import android.R.attr.text
 
 
 @Composable
@@ -71,6 +72,14 @@ fun FormIsian(
                 .width(width =250.dp),
                 thickness = 1.dp,
                 color = Color.Red
+            )
+            OutlinedTextField(
+                value = "",
+                singleLine = true,
+                modifier = Modifier
+                    .width(width = 250.dp),
+                label = {Text(text = "alamat")},
+                onValueChange  = {}
             )
 
         }
