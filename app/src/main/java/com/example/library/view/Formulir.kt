@@ -18,6 +18,7 @@ import androidx.compose.material3.OutlinedTextField
 import androidx.compose.ui.unit.dp
 import androidx.compose.foundation.layout.width
 import androidx.compose.material3.HorizontalDivider
+import androidx.compose.material3.DividerDefaults.Thickness
 
 
 
@@ -49,7 +50,11 @@ fun FormIsian(
                 label = {Text(text = "Nama Lengkap")},
                 onValueChange = {},
             )
-            HorizontalDivider(modifier = Modifier)
+            HorizontalDivider(modifier = Modifier
+                .padding(all=20.dp)
+                .width(width=250.dp), thickness= Thickness,color = Color.Red)
+
+
 
         }
 
