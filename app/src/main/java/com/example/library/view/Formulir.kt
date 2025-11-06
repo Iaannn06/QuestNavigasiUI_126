@@ -7,7 +7,9 @@ import androidx.compose.material3.TopAppBar
 import androidx.compose.ui.res.stringResource
 import androidx.compose.material3.Text
 import androidx.compose.ui.graphics.Color
-
+import androidx.compose.material3.TopAppBarDefaults
+import androidx.compose.ui.res.colorResource
+import androidx.compose.material3.R
 
 @Composable
 fun FormIsian(
@@ -18,7 +20,9 @@ fun FormIsian(
         topBar= {
             TopAppBar(
                 title = {Text(text=stringResource(id= R.string.home),
-                    color = Color.White)}
+                    color = Color.White)},
+                colors = TopAppBarDefaults.topAppBarColors
+                    (containerColor = colorResource(id = R.color.teal_700))
             )
         }
         )
