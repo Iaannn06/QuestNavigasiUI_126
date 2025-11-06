@@ -17,6 +17,7 @@ import androidx.compose.ui.Alignment
 import androidx.compose.material3.OutlinedTextField
 import androidx.compose.ui.unit.dp
 import androidx.compose.foundation.layout.width
+import androidx.compose.material3.HorizontalDivider
 
 
 
@@ -46,8 +47,10 @@ fun FormIsian(
                     .padding(top=20.dp)
                     .width(width=250.dp),
                 label = {Text(text = "Nama Lengkap")},
-                onValueChange{},
+                onValueChange = {},
             )
+            HorizontalDivider(modifier = Modifier)
+
         }
 
     }
