@@ -14,6 +14,7 @@ import androidx.compose.ui.res.colorResource
 import androidx.compose.material3.R
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.ui.Alignment
+import androidx.compose.material3.OutlinedTextField
 
 @Composable
 fun FormIsian(
@@ -32,7 +33,12 @@ fun FormIsian(
         ){isiRuang ->
         Column(modifier = Modifier.padding(paddingValues=isiRuang),
            verticalArrangement = Arrangement.Top,
-           horizontalAlignment = Alignment.CenterHorizontally )
+           horizontalAlignment = Alignment.CenterHorizontally
+        ){
+            OutlinedTextField(
+
+            )
+        }
 
     }
 }
