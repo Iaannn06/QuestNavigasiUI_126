@@ -15,6 +15,10 @@ import androidx.compose.material3.R
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.ui.Alignment
 import androidx.compose.material3.OutlinedTextField
+import androidx.compose.ui.unit.dp
+import androidx.compose.foundation.layout.width
+
+
 
 @Composable
 fun FormIsian(
@@ -38,6 +42,10 @@ fun FormIsian(
             OutlinedTextField(
                 value = "",
                 singleLine = true,
+                modifier = Modifier
+                    .padding(top=20.dp)
+                    .width(width=250.dp)
+
 
             )
         }
