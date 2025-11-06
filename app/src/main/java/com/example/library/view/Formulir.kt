@@ -36,6 +36,8 @@ fun FormIsian(
            horizontalAlignment = Alignment.CenterHorizontally
         ){
             OutlinedTextField(
+                value = "",
+                singleLine = true,
 
             )
         }
