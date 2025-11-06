@@ -21,11 +21,6 @@ import androidx.compose.foundation.layout.width
 import androidx.compose.material3.HorizontalDivider
 import androidx.compose.material3.DividerDefaults.Thickness
 import androidx.compose.material3.RadioButton
-import android.R.attr.text
-import androidx.compose.foundation.layout.Spacer
-import androidx.compose.foundation.layout.fillMaxWidth
-import androidx.compose.foundation.layout.height
-import androidx.compose.material3.Button
 
 
 @Composable
@@ -65,7 +60,8 @@ fun FormIsian(
                     Row(verticalAlignment = Alignment.CenterVertically){
                         RadioButton(
                             selected = false,
-                            onClick = {item}
+
+                    }                        onClick = {item}
                         )
                         Text(text = item)
                     }
@@ -76,25 +72,9 @@ fun FormIsian(
                 .width(width =250.dp),
                 thickness = 1.dp,
                 color = Color.Red
-            )
-            OutlinedTextField(
-                value = "",
-                singleLine = true,
-                modifier = Modifier
-                    .width(width = 250.dp),
-                label = {Text(text = "alamat")},
-                onValueChange  = {}
-            )
-            Spacer(modifier = Modifier.height(height=30.dp))
-            Button(
-                modifier = Modifier.fillMaxWidth(fraction=1f),
-                onClick = onSubmitBtnClick
-            ){
-                Text(text=stringResource(id=R.string.submit))
-            }
 
+            )
         }
 
     }
-}
 
