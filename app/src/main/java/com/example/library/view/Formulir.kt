@@ -13,6 +13,7 @@ import androidx.compose.material3.TopAppBarDefaults
 import androidx.compose.ui.res.colorResource
 import androidx.compose.material3.R
 import androidx.compose.foundation.layout.Arrangement
+import androidx.compose.foundation.layout.Row
 import androidx.compose.ui.Alignment
 import androidx.compose.material3.OutlinedTextField
 import androidx.compose.ui.unit.dp
@@ -53,9 +54,11 @@ fun FormIsian(
             HorizontalDivider(modifier = Modifier
                 .padding(all=20.dp)
                 .width(width=250.dp), thickness= Thickness,color = Color.Red)
-
-
-
+            Row {
+                jenisK.forEach {
+                    item->
+                }
+            }
         }
 
     }
