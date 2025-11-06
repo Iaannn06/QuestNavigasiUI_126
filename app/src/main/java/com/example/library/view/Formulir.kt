@@ -22,6 +22,10 @@ import androidx.compose.material3.HorizontalDivider
 import androidx.compose.material3.DividerDefaults.Thickness
 import androidx.compose.material3.RadioButton
 import android.R.attr.text
+import androidx.compose.foundation.layout.Spacer
+import androidx.compose.foundation.layout.fillMaxWidth
+import androidx.compose.foundation.layout.height
+import androidx.compose.material3.Button
 
 
 @Composable
@@ -81,6 +85,13 @@ fun FormIsian(
                 label = {Text(text = "alamat")},
                 onValueChange  = {}
             )
+            Spacer(modifier = Modifier.height(height=30.dp))
+            Button(
+                modifier = Modifier.fillMaxWidth(fraction=1f),
+                onClick = onSubmitBtnClick
+            ){
+                Text(text=stringResource(id=R.string.submit))
+            }
 
         }
 
